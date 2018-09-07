@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_item_genre"
+            style="@style/TextAppearance.AppTheme.ListItemFont"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/list_item_padding"
+            android:layout_marginRight="@dimen/list_item_padding"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="8dp"
+            android:text="@string/genre_default_str" />
+
+        <TextView
+            android:id="@+id/tv_item_albums"
+            style="@style/TextAppearance.AppTheme.ListItemFont"
+            android:layout_alignLeft="@+id/tv_item_genre"
+            android:layout_alignStart="@+id/tv_item_genre"
+            android:layout_below="@+id/tv_item_genre"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="@dimen/list_item_padding"
+            android:layout_marginRight="@dimen/list_item_padding"
+            android:layout_marginTop="8dp"
+            android:text="@string/albums_detail_default_str" />
+
+        <TextView
+            android:id="@+id/tv_item_bio_header"
+            style="@style/TextAppearance.AppTheme.BioHeaderFont"
+            android:layout_alignLeft="@+id/tv_item_albums"
+            android:layout_alignStart="@+id/tv_item_albums"
+            android:layout_below="@+id/tv_item_albums"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="@dimen/list_item_padding"
+            android:layout_marginRight="@dimen/list_item_padding"
+            android:layout_marginTop="16dp"
+            android:text="@string/biography_default_str" />
+
+        <TextView
+            android:id="@+id/tv_item_bio_description"
+            style="@style/TextAppearance.AppTheme.BioDescriptionFont"
+            android:layout_alignLeft="@+id/tv_item_bio_header"
+            android:layout_alignStart="@+id/tv_item_bio_header"
+            android:layout_below="@+id/tv_item_bio_header"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="@dimen/list_item_padding"
+            android:layout_marginRight="@dimen/list_item_padding"
+            android:layout_marginTop="8dp"
+            android:text="@string/biography_description_default_str" />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

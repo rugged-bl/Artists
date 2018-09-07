@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Artists</string>
+
+    <string name="album_str">альбом</string>
+    <string name="track_str">трек</string>
+    <string name="detail_title_default_str">Детально</string>
+    <string name="artist_name_default_str">Bonobo</string>
+    <string name="albums_delimiter_detail">"  •  "</string>
+    <string name="albums_delimiter_list">", "</string>
+    <string name="albums_detail_default_str">5 альбомов * 44 песни</string>
+    <string name="albums_list_default_str">5 альбомов, 44 песни</string>
+    <string name="genre_default_str">dance, electronics</string>
+    <string name="biography_default_str">Биография</string>
+    <string name="biography_description_default_str">Биография Биографии</string>
+    <string name="loading_error_no_internet">Ошибка\nВозможно, отсутсвует подключение к интернету</string>
+</resources>

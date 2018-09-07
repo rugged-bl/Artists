@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:foreground="?attr/selectableItemBackground"
+    card_view:cardElevation="5dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal"
+        android:padding="@dimen/list_item_padding">
+
+        <ImageView
+            android:id="@+id/iv_item_artist"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:scaleType="fitStart"
+            android:src="@android:drawable/ic_menu_send" />
+
+        <TextView
+            android:id="@+id/tv_item_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_item_artist"
+            android:layout_marginBottom="@dimen/list_item_header_vertical_margin"
+            android:layout_marginLeft="@dimen/list_item_padding"
+            android:layout_marginRight="@dimen/list_item_padding"
+            android:layout_marginTop="@dimen/list_item_header_vertical_margin"
+            android:layout_toEndOf="@+id/iv_item_artist"
+            android:layout_toRightOf="@+id/iv_item_artist"
+            android:text="@string/artist_name_default_str"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_item_genre"
+            style="@style/TextAppearance.AppTheme.ListItemFont"
+            android:layout_alignLeft="@+id/tv_item_header"
+            android:layout_alignStart="@+id/tv_item_header"
+            android:layout_below="@+id/tv_item_header"
+            android:text="@string/genre_default_str" />
+
+        <TextView
+            android:id="@+id/tv_item_albums"
+            style="@style/TextAppearance.AppTheme.ListItemFont"
+            android:layout_alignBottom="@+id/iv_item_artist"
+            android:layout_alignLeft="@+id/tv_item_header"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignStart="@+id/tv_item_header"
+            android:text="@string/albums_detail_default_str" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
